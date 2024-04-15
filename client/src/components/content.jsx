@@ -12,16 +12,16 @@ function Navigation(){
             </li>
 
             <li>
-              <a href="/Home">Home</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="/Contents">Contents</a>
+              <a href="/contactus">Contact Us</a>
             </li>
             <li>
-              <a href="/Contact">Contact us</a>
+              <a href="/Content">Content</a>
             </li>
             <li className="right">
-              <a href="/About">About</a>
+              <a href="/home">Home</a>
             </li>
         
             </ul>
