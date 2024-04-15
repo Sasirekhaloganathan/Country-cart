@@ -6,9 +6,16 @@ function Navigation(){
         <nav>   
         <ul>
             <li>
-                <a href="/About">
+                <a href="/about">
                 <img src={logo} alt="Logo"></img>
             </a>
+            </li>
+            <li>
+                    <a href="/cart">
+                <img src="/trolley.png">
+
+                </img>
+                    </a>
             </li>
 
             <li>
@@ -23,7 +30,6 @@ function Navigation(){
             <li className="right">
               <a href="/home">Home</a>
             </li>
-        
             </ul>
          </nav>
     )

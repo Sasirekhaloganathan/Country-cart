@@ -2,10 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { contactConfig } from "./content_option"
 import '../Style/contact.css'
+import Navigation from "./Navigation";
 export default function ContactUs() {
   
 
   return (
+    <>
+    <Navigation />
       <Container>
      
         <Row className="mb-5 mt-3">
@@ -45,7 +48,7 @@ export default function ContactUs() {
                     placeholder="Name" 
                     type="text"
                     required 
-                  />
+                    />
                 </Col>
                 <Col lg="6" className="form-group">
                   <input
@@ -55,7 +58,7 @@ export default function ContactUs() {
                     placeholder="Email"
                     type="email" 
                     required 
-                  />
+                    />
                 </Col>
               </Row>
               <textarea
@@ -65,7 +68,7 @@ export default function ContactUs() {
                 placeholder="Message"
                 rows="5" 
                 required
-              ></textarea>
+                ></textarea>
               <br />
               <Row>
                 <Col lg="12" className="form-group">
@@ -78,5 +81,6 @@ export default function ContactUs() {
           </Col>
         </Row>
       </Container>
+                </>
   );
 }

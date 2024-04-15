@@ -1,27 +1,46 @@
-import React,{useState} from "react";
-import logo from '/icons.png';
-import '../Style/content.css';
-import Navigation from "./Navigation";
-function Content()
-{
+import React, { useState } from 'react';
+import '../Style/content.css'; // Import your CSS file
+import Navigation from './Navigation';
+
+function ProductDisplayPage() {
+    const [showDescription, setShowDescription] = useState(false);
+  const handleMouseClick=()=>{
     
-    return(
-        <>
-        <div className="nav">
-           <Navigation />
+  }
+    const handleMouseEnter = () => {
+        setShowDescription(true);
+    };
+
+    const handleMouseLeave = () => {
+        setShowDescription(false);
+    };
+
+    return (
+      <>
+      <div className='nav'>
+        <Navigation />
+      </div>
+        <div className="product-display">
+            <div className="product">
+                <img
+                    src="/icons.png"
+                    alt="Product"
+                    className="product-image"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    />
+                    <img src="/trolley.png" onClick={handleMouseClick}></img>
+                {showDescription && (
+                  <div className="description-box">
+                        <h2>Product Name</h2>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
+                        <p>Price: $20</p>
+                    </div>
+                )}
+            </div>
         </div>
-        <div className="Products">
-            <div className="prod1"><img src={logo} alt="samp" /><h2>is your product</h2></div>
-            <div className="prod1">2</div>
-            <div className="prod1">3</div>
-            <div className="prod1">4</div>
-            <div className="prod1">6</div>
-            <div className="prod1">7</div>
-            <div className="prod1">8</div>
-            <div className="prod1">9</div>
-        </div>
-        </>
-    )
+                </>
+    );
 }
 
-export default Content
+export default ProductDisplayPage;
