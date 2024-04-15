@@ -12,6 +12,8 @@
     color: black;
     border-radius: 10px;
     padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper h1{
