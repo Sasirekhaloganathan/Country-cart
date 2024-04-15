@@ -1,5 +1,5 @@
 import React , {Fragment} from "react";
-import './HomePage.css';
+import '../Style/HomePage.css';
 const HomePage = () =>
 {
     return(
@@ -8,4 +8,4 @@ const HomePage = () =>
         </>
     );
 }
-export default App;
+export default HomePage;

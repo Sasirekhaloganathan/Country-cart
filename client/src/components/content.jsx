@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import logo from '/icons.png';
-import './content.css';
+import '../Style/content.css';
 function Navigation(){
     return (
         <nav>   
