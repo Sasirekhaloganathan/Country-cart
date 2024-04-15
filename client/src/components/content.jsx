@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Style/content.css'; // Import your CSS file
+import '../Style/content.css';
 import Navigation from './Navigation';
 
 function ProductDisplayPage() {

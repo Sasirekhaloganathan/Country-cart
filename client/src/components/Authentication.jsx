@@ -26,6 +26,6 @@ function Authentication(){
             </form>
         </div>
         </>
-    )
+    );
 }
 export default Authentication;
