@@ -4,6 +4,7 @@ import Content from './components/content'
 import Home from './components/HomePage'
 import './Style/App.css'
 import Authentication from './components/Authentication'
+import Contact from './components/contact'
 function App() {
   const [count, setCount] = useState(0)
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Authentication />}></Route>
         <Route path='/home' element={<Home />}></Route>      
       <Route path='/content' element={<Content />}></Route>
+      <Route path='/contactus' element={<Contact />}></Route>
       </Routes>
       </BrowserRouter>
       
