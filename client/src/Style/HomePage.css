@@ -3,6 +3,41 @@
     border-radius : 5px;
     background-color: rgb(244, 161, 161);
     padding : 20px 0;
-    margin : 5px 0;
+    display:inline-block;
+    align-items: center;
 }
 
+.container1 .icon {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    float:right;
+}
+
+.para1, .para3 {
+    padding: 10px 10px 10px 10px;
+    margin: 20px 200px 20px 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    text-align: justify;
+    background-color: lightpink;
+    border : 0.5px solid grey;
+}
+
+.para2 , .para4 {
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0px 20px 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    text-align: justify;
+    background-color: pink;
+    border : 0.5px solid grey;
+}
+
+.para1:hover ,.para2:hover , .para3:hover , .para4:hover {
+    border : 2px solid black;
+    font-style: oblique;
+}
