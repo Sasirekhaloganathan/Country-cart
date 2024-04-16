@@ -1,7 +1,8 @@
 .cont1 {
-    padding: 10px 0;
+    padding: 10px 10px;
     margin: 10px 0;
-    background-color: #fff;
+    background-color: rgb(40, 40, 40);
+    color : white;
 }
 
 ul {

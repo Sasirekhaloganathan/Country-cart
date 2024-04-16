@@ -12,7 +12,7 @@ function Navigation(){
             </li>
             <li>
                     <a href="/cart">
-                <img src="/trolley.png">
+                <img src="/Country Cart Logo.png">
 
                 </img>
                     </a>
