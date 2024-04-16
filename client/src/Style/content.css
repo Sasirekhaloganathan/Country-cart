@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items:start;
+  flex-wrap: wrap;
   height: 100vh;
+  gap: 20px;
 }
 
 .product {
@@ -29,7 +31,7 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translate(50%, -10px);
+  transform: translate(-50%, -10px);
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 10px;

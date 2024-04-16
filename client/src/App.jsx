@@ -6,7 +6,6 @@ import './Style/App.css'
 import Authentication from './components/Authentication'
 import Contact from './components/contact'
 import Cart from './components/cart'
-import About from './components/About'
 function App() {
   const [count, setCount] = useState(0)
   return (
@@ -18,7 +17,6 @@ function App() {
       <Route path='/content' element={<Content />}></Route>
       <Route path='/contactus' element={<Contact />}></Route>
       <Route path='/cart' element={<Cart />}></Route>
-      <Route path='/about' element={<About />}></Route>
       </Routes>
       </BrowserRouter>
       

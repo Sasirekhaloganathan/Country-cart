@@ -6,7 +6,7 @@ function Navigation(){
         <nav>   
         <ul>
             <li>
-                <a href="/about">
+                <a href="/home">
                 <img src={logo} alt="Logo"></img>
             </a>
             </li>
@@ -18,9 +18,6 @@ function Navigation(){
                     </a>
             </li>
 
-            <li>
-              <a href="/about">About</a>
-            </li>
             <li>
               <a href="/contactus">Contact Us</a>
             </li>
