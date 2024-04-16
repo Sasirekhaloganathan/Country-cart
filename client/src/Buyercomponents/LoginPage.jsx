@@ -6,7 +6,7 @@ import '../Style/register.css'
 export default function SignInPage() {
     return (
         <div className="text-center m-5-auto">
-            <h2>Sign in to us</h2>
+            <h2>Sign In</h2><br></br>
             <form action="/home">
                 <p>
                     <label>Username or email address</label><br/>
