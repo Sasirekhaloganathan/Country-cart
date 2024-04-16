@@ -17,6 +17,13 @@
     text-align : center;
     float:right;
 }
+.logo{
+    text-align: center;
+}
+.logoicon {
+    width: 250px;
+    height:250px;
+}
 
 .para1, .para3 {
     padding: 10px 10px 10px 10px;

@@ -8,7 +8,7 @@ const HomePage = () =>
         <div className="nav">
             <Navigation />
         </div>
-        
+        <div className="logo"><img src="Country_Cart_Logo.png" className="logoicon"></img></div>
         <div className="pc1">
         <div className="para1">
         Country Cart is a groundbreaking mobile application that revolutionizes the agricultural industry by connecting farmers directly with consumers. By eliminating intermediaries, the platform empowers farmers to showcase their produce directly to consumers, ensuring fair compensation for their labor and dedication. This direct-to-consumer model not only benefits farmers financially but also enables consumers to access fresh, locally sourced goods at competitive prices.
