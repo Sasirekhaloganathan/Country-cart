@@ -1,7 +1,6 @@
 import React , {Fragment} from "react";
 import '../Style/HomePage.css';
 import Navigation from "./Navigation";
-import { RiAccountCircleFill } from "react-icons/ri";
 const HomePage = () =>
 {
     return(

@@ -1,6 +1,8 @@
 import React from "react"
 import '../Style/Navi.css'
 import logo from '/Country Cart Logo.png'
+import { RiAccountCircleFill } from "react-icons/ri";
+
 function Navigation(){
     return (
         <nav>   
@@ -10,6 +12,11 @@ function Navigation(){
                 <img src={logo} alt="Logo"></img>
             </a>
             </li>
+        <li>
+
+          <a href="/" ><RiAccountCircleFill className="icon" /></a>
+        </li>
+        
             <li>
                 <a href="/cart">
                 <img src="/trolley.png">
