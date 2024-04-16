@@ -20,6 +20,7 @@ float: right;
 li:first-child {
 border-right: none;
 float:left;
+
 }
 
 li a {

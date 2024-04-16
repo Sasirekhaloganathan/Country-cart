@@ -7,11 +7,15 @@
 }
 
 body {
-    margin: 0 auto
+    margin: 0 auto;
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    height: 100vh;
+    
 }
 
 .m-5-auto {
-    margin: 5rem auto
+    margin: 5rem auto;
 }
 
 .primary-button {
@@ -25,34 +29,46 @@ body {
     font-size: 1.2rem;
     transition: all .5s;
     cursor: pointer;
-    text-transform: capitalize
+    text-transform: capitalize;
+
 }
 
 /***    Landing Page     ***/
 .main-title,
 .main-para {
-    color: #f1f1f1
+    color: #292727;
+    text-align: center;
 }
 
 .main-title {
     padding-top: 10rem;
     font-size: 5rem;
-    font-family: 'Fascinate', cursive;
-    text-transform: uppercase
+    font-family: 'Arial', cursive;
+    text-transform: uppercase;
+    
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align buttons horizontally */
+    margin-top: 5rem;
+}
 .main-para {
     font-size: 2.5rem;
-    text-Transform: capitalize
+    text-Transform: capitalize;
+    
 }
-
+#login_btn span,
 #reg_btn span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    
 }
 
-#reg_btn span:after {
+#reg_btn span:after,
+#login_btn span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -61,47 +77,59 @@ body {
     transition: 0.5s;
 }
 
-#reg_btn:hover span {
+#reg_btn:hover span,
+#login_btn:hover span {
   padding-right: 25px;
 }
 
-#reg_btn:hover span:after {
+#reg_btn:hover span:after,
+#login_btn:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /***    Login Page     ***/
 h2 {
-    font-weight: 300
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Arial', cursive;
 }
 
 form {
     display: inline-block;
     background: #f3f3f3;
     border: 1px solid #ddd;
+    max-width: 500px;
     border-radius: 2px;
     padding: 2rem;
-    margin: 2rem 0 1rem 0
+    margin: 0 auto;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
 }
 
 form label {
     float: left;
     font-size: .9rem;
     margin: 0;
-    padding: 0
+    padding: 0;
+    
 }
 
 .right-label {
     float: right;
-    cursor: pointer
+    cursor: pointer;
 }
 
 input {
-    width: 15rem;
+    width: 27rem;
     padding: .3rem;
     border-radius: 5px;
     outline: none;
-    border: none
+    border: none;
+    margin: .5rem 0;
+    margin-bottom: 1rem;
 }
 
 #sub_btn {
@@ -119,25 +147,35 @@ input {
     transition: all .5s
 }
 
+footer {
+    margin-top: 2rem; /* Add margin to footer for spacing */
+    text-align: center; /* Center-align footer text */
+}
 footer p {
     margin: 0;
-    font-size: .9rem
+    font-size: .9rem;
 }
 
 /***    Register Page     ***/
+h5 {
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Arial', cursive;
+}
 #checkbox {
-    width: 1rem
+    width: 1rem;
 }
 
 form span {
-    font-size: .8rem
+    font-size: .8rem;
 }
 
 #reset_pass_lbl {
-    float: left
+    float: left;
 }
 
 /***    Home Page     ***/
 .home-page-title {
-    color: #222
+    color: #222;
 }
