@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import {BrowserRouter , Routes, Route} from 'react-router-dom'
-import Content from './components/content'
-import Home from './components/HomePage'
+import Content from './Buyercomponents/content'
+import Home from './Buyercomponents/HomePage'
 import './Style/App.css'
-import Cart from './components/cart'
-import Landing from './components/LandingPage'
-import Login from './components/LoginPage'
-import Register from './components/RegisterPage'
-import ForgotPass from './components/ForgetPasswordPage'
+import Cart from './Buyercomponents/cart'
+import Landing from './Buyercomponents/LandingPage'
+import Login from './Buyercomponents/LoginPage'
+import Register from './Buyercomponents/RegisterPage'
+import ForgotPass from './Buyercomponents/ForgetPasswordPage'
 function App() {
   const [count, setCount] = useState(0)
   return (
