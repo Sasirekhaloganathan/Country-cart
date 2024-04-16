@@ -1,6 +1,6 @@
 import React from "react"
 import '../Style/Navi.css'
-import logo from '/Country Cart Logo.png'
+import logo from '/Country_Cart_Logo.png'
 import { RiAccountCircleFill } from "react-icons/ri";
 
 function Navigation(){
@@ -32,7 +32,7 @@ function Navigation(){
               <a href="/Content">Content</a>
             </li>
             <li className="right">
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </li>
             </ul>
          </nav>

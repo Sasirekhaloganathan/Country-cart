@@ -21,6 +21,7 @@ function Content() {
         <Navigation />
       </div>
         <div className="product-display">
+        
             <div className="product">
                 <img
                     src="/icons.png"
@@ -29,8 +30,6 @@ function Content() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     />
-                    
-                   <Link to='/cart'><buttton><img src="/trolley.png"></img></buttton></Link>
                 {showDescription && (
                   <div className="description-box">
                         <h2>Product Name</h2>
@@ -39,6 +38,7 @@ function Content() {
                     </div>
                 )}
             </div>
+                <Link to='/cart'><div>Content</div></Link>
             
         </div>
                 </>

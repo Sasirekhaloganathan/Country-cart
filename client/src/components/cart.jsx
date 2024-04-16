@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import { useParams } from "react-router-dom";
 function Cart(){
     const {data}=useParams();
+    console.log(data);
     return(
 
         <>
@@ -11,7 +12,8 @@ function Cart(){
             <Navigation />
         </div>
         <div >
-            {data}
+            <div>{data}
+            </div>
         </div>
 
         </>
