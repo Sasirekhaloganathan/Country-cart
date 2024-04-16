@@ -23,7 +23,6 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(250, 207, 207, 0.2);
     text-align: justify;
-    background-color: rgb(212, 226, 90);
     border : 0.5px solid grey;
     line-height: 1.5;
     animation: fadeIn 0.5s ease-in-out;
@@ -36,7 +35,6 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(255, 255, 255, .2);
     text-align: justify;
-    background-color: rgb(192, 213, 106);
     border : 0.5px solid grey;
     line-height: 1.5;
     animation: fadeIn 0.5s ease-in-out;
@@ -45,7 +43,6 @@
 .pc1 , .pc2 , .pc3 , .pc4 {
     padding: 10px;
     margin : 10px 0;
-    background-color: khaki;
     background-blend-mode:color-dodge;
 }
 
