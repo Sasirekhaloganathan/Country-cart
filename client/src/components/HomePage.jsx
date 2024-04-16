@@ -30,8 +30,9 @@ const HomePage = () =>
         </div>
         </div>
         <div className="footer">
-            <div className="f1"></div>
-        <div className="f2"> © 2024 Country Cart. All rights reserved.</div>
+                    <li>Country Cart</li>
+                    <li>Email Us<a mailto="pradeepsakthis.22cse@kongu.edu ">countrycart24@gmail.com</a></li>
+                    <li>Address</li>
         </div>
         </>
     );
