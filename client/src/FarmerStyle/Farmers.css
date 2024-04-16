@@ -7,3 +7,37 @@
 .title {
     text-align:center;
 }
+
+.ip {
+    width :100%;
+    padding:10px;
+    border : 0.5px solid black;
+}
+
+.attribute {
+    padding : 10px;
+    text-align: left;
+    font-size:17px;
+}
+
+
+.attribute1 {
+    padding : 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:17px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 250px;
+    height: 250px;
+}
+
+#imgip {
+    border:0.5px solid black;
+
+}
