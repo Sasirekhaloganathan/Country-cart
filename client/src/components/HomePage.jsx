@@ -6,11 +6,9 @@ const HomePage = () =>
 {
     return(
         <>
-        <div className="nav">
-            <Navigation />
-        </div>
         <div className="container1">
-          <a href="/" ><RiAccountCircleFill class="icon" /></a>
+          <a href="/" ><RiAccountCircleFill className="icon" /></a>
+                <a href="/login"><img src="/icons.png"></img></a>
         </div>
         <div className="pc1">
         <div className="para1">
