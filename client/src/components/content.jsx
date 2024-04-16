@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Style/content.css';
 import Navigation from './Navigation';
-
+import { Link } from 'react-router-dom';
 function Content() {
     const [showDescription, setShowDescription] = useState(false);
   const handleMouseClick=()=>{
@@ -29,7 +29,8 @@ function Content() {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
+                    
+                   <Link to='/cart'><buttton><img src="/trolley.png"></img></buttton></Link>
                 {showDescription && (
                   <div className="description-box">
                         <h2>Product Name</h2>
@@ -38,125 +39,7 @@ function Content() {
                     </div>
                 )}
             </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
-            <div className="product">
-                <img
-                    src="/icons.png"
-                    alt="Product"
-                    className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    />
-                    <img src="/trolley.png" onClick={handleMouseClick}></img>
-                {showDescription && (
-                  <div className="description-box">
-                        <h2>Product Name</h2>
-                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et turpis justo.</p>
-                        <p>Price: $20</p>
-                    </div>
-                )}
-            </div>
+            
         </div>
                 </>
     );

@@ -71,3 +71,13 @@
     padding: 10px 0;
     text-align: center;
 }
+img{
+    width: 20px;
+    height: 20px;
+}
+a img :hover{
+    background-color: #ff6123;
+    border-radius: 5px;
+    transform: scale(1.2);
+    transition : background-color 0.3s , transform 0.3s;
+}
