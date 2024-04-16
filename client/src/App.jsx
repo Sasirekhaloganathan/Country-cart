@@ -8,10 +8,12 @@ import Landing from './Buyercomponents/LandingPage'
 import Login from './Buyercomponents/LoginPage'
 import Register from './Buyercomponents/RegisterPage'
 import ForgotPass from './Buyercomponents/ForgetPasswordPage'
+import Farmers from './Farmercomponents/Farmers'
 function App() {
   const [count, setCount] = useState(0)
   return (
     <>
+
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Landing />}></Route>      
@@ -22,6 +24,7 @@ function App() {
       <Route path='/content' element={<Content />}></Route>
       <Route path='/cart' element={<Cart />}></Route>
       <Route path="/cart/:data" component={<Cart />} />
+      <Route path="/farmers" element={<Farmers />} />
 
 
       </Routes>
