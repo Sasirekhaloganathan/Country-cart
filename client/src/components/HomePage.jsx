@@ -31,7 +31,8 @@ const HomePage = () =>
         </div>
         </div>
         <div className="footer">
-        © 2024 Country Cart. All rights reserved.
+            <div className="f1"></div>
+        <div className="f2"> © 2024 Country Cart. All rights reserved.</div>
         </div>
         </>
     );
