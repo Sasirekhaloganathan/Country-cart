@@ -30,9 +30,10 @@ const HomePage = () =>
         </div>
         </div>
         <div className="footer">
-                    <li>Country Cart</li>
-                    <li>Email Us<a mailto="pradeepsakthis.22cse@kongu.edu ">countrycart24@gmail.com</a></li>
-                    <li>Address</li>
+                        <li>Country Cart<br></br><br></br>
+                        Email Us : countrycart24@gmail.com<br></br><br></br>
+                        Address :<br></br>40,Cornelia Street,<br></br>Pondicherry.<br></br>
+                        Tel no :044 4561 6780</li>
         </div>
         </>
     );
