@@ -7,8 +7,8 @@ import '../Style/register.css'
 export default function LandingPage() {
     return (
         <header style={ HeaderStyle }>
-            <h1 className="main-title text-center">Login or Register</h1>
-            
+                <div className="logo"><img src="Country_Cart_Logo.png" className="logoicon"></img></div>
+
             <div className="buttons text-center">
                 <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>

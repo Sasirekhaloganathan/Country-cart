@@ -5,14 +5,7 @@ import { Link } from 'react-router-dom';
 import Data from'./data';
 const Content=()=> {
 
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (item) => {
-    setCart([...cart, item]);
-    // Show popup notification
-    alert(`${item.name} added to cart`);
-  };
-
+    
     
     return (
       <>
@@ -23,12 +16,12 @@ const Content=()=> {
         {Data.map(({id,name,image}) => {
           return (
 
-            <div key={id} className="product">
+            <div className="product">
                 <img
                     src={image}
                     alt="Product"
                     className="product-image"
-                    
+    
                     />
                 
                   <div className="description-box">
@@ -36,7 +29,7 @@ const Content=()=> {
                         <p>Description: Sample product.</p>
                         <p>Price: $20</p>
                     </div>
-              
+                
             </div>
           );
         })}
