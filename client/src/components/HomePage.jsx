@@ -30,8 +30,10 @@ const HomePage = () =>
         </div>
         </div>
         <div className="footer">
-            <div className="f1"></div>
-        <div className="f2"> © 2024 Country Cart. All rights reserved.</div>
+                        <li>Country Cart<br></br><br></br>
+                        Email Us : countrycart24@gmail.com<br></br><br></br>
+                        Address :<br></br>40,Cornelia Street,<br></br>Pondicherry.<br></br>
+                        Tel no :044 4561 6780</li>
         </div>
         </>
     );
