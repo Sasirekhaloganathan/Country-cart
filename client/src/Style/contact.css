@@ -1,20 +1,18 @@
-
+.cont1 {
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: #fff;
+}
 
 ul {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: Marcellus;
 }
 
-a,
-a:hover {
+a,a:hover {
     color: var(--text-color);
 }
 
