@@ -4,10 +4,10 @@ import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import Cart from './cart';
 function addToCart() {
-     Cart.querySelector(".Name").innerHTML=document.getElementById("prod").textContent;
-     Cart.querySelector(".description").innerHTML=document.getElementById("des").textContent;
-     Cart.querySelector(".price").innerHTML=document.getElementById("price").textContent;
-     Cart.querySelector(".product-image").setAttribute("src",document.getElementById("prodimg").getAttribute("src"));
+     localStorage.setItem("name",document.getElementById("name").textContent);
+     localStorage.setItem("descript",document.getElementById("desc").textContent);
+     localStorage.setItem("price",document.getElementById("price").textContent);
+     localStorage.setItem("src",document.getElementById("img").getAttribute("src"));
 };
 
 import Data from'./data';
@@ -26,22 +26,18 @@ const Content=()=> {
                     src={image}
                     alt="Product"
                     className="product-image"
-                     id="prodimg"
+                     id="img"
 
                     />
                   <div className="description-box">
 
-                        <h2>Product Name</h2>
-                        <p>Description: Sample product.</p>
-                        <p>Price: $20</p>
-                    </div>
-                
-
-                        <h2 id="prod">Product Name</h2>
-                        <p id="des">Description: Sample product.</p>
+                        <h2 id="name">Product Name</h2>
+                        <p id="desc">Description: Sample product.</p>
                         <p id="price">Price: $20</p>
-                        <button onClick={addToCart}>Add to Cart</button>
-                    </div>       
+                        <button onClick={addToCart}>Add To Cart</button>
+                    </div>  
+                </div>
+    
           );
         
         })}        

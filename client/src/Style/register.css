@@ -49,10 +49,16 @@ body {
 }
 .buttons {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: row; /* Stack buttons vertically */
     align-items: center; /* Center-align buttons horizontally */
     margin-top: auto;
+    margin-left:200px;
     
+}
+
+#user, #farmer {
+    font-size:20px;
+    padding-bottom:50px;
 }
 .main-para {
     font-size: 2.5rem;
@@ -69,6 +75,10 @@ body {
     position: relative;
     transition: 0.5s;
     
+}
+
+.login {
+    display:inline-flex;
 }
 
 #reg_btn span:after,
