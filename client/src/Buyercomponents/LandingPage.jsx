@@ -10,7 +10,7 @@ export default function LandingPage() {
                 <div className="logo"><img src="Country_Cart_Logo.png" className="logoicon"></img></div>
 <div className="login">
             <div className="buttons text-center">
-            <span id="user">BUYER</span><br></br>
+            <span id="userspan">BUYER</span><br></br>
                 <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>
                 </Link>
@@ -19,7 +19,7 @@ export default function LandingPage() {
                 </Link>
             </div>
             <div className="buttons text-center">
-            <span id="farmer">VENDOR</span><br></br>
+            <span id="farmerspan">VENDOR</span><br></br>
                 <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>
                 </Link>
