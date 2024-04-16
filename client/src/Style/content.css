@@ -38,13 +38,10 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 200px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  
 }
 
-.product:hover .description-box {
-  opacity: 1; 
-}
+
 
 .description-box h2 {
   margin-top: 0;
