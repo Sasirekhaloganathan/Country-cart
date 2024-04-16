@@ -11,7 +11,6 @@ const HomePage = () =>
         </div>
         <div className="container1">
           <a href="/" ><RiAccountCircleFill className="icon" /></a>
-                <a href="/login"><img src="/icons.png"></img></a>
         </div>
         <div className="pc1">
         <div className="para1">

@@ -1,6 +1,6 @@
 import React from "react"
 import '../Style/Navi.css'
-import logo from '/icons.png'
+import logo from '/Country Cart Logo.png'
 function Navigation(){
     return (
         <nav>   
@@ -11,8 +11,8 @@ function Navigation(){
             </a>
             </li>
             <li>
-                    <a href="/cart">
-                <img src="/Country Cart Logo.png">
+                <a href="/cart">
+                <img src="/trolley.png">
 
                 </img>
                     </a>
