@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import Data from'./data';
 const Content=()=> {
 
-    const [showDescription, setShowDescription] = useState(false);
-    const handleMouseEnter = () => {
-        setShowDescription(true);
-    };
+  const [cart, setCart] = useState([]);
 
-    const handleMouseLeave = () => {
-        setShowDescription(false);
-    };
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+    // Show popup notification
+    alert(`${item.name} added to cart`);
+  };
+
     
     return (
       <>
@@ -23,21 +23,20 @@ const Content=()=> {
         {Data.map(({id,name,image}) => {
           return (
 
-            <div className="product">
+            <div key={id} className="product">
                 <img
                     src={image}
                     alt="Product"
                     className="product-image"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    
                     />
-                {showDescription && (
+                
                   <div className="description-box">
                         <h2>Product Name</h2>
                         <p>Description: Sample product.</p>
                         <p>Price: $20</p>
                     </div>
-                )}
+              
             </div>
           );
         })}

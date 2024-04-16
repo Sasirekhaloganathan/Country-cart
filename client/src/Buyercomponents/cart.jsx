@@ -2,8 +2,8 @@ import React from "react";
 import '../Style/cart.css';
 import Navigation from "./Navigation";
 import { useParams } from "react-router-dom";
-function Cart(){
-    const {data}=useParams();
+function Cart({data}){
+    
     console.log(data);
     return(
 
