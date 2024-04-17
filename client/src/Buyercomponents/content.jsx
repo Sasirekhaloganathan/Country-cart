@@ -4,10 +4,7 @@ import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import Cart from './cart';
 function addToCart() {
-     localStorage.setItem("name",document.getElementById("name").textContent);
-     localStorage.setItem("descript",document.getElementById("desc").textContent);
-     localStorage.setItem("price",document.getElementById("price").textContent);
-     localStorage.setItem("src",document.getElementById("img").getAttribute("src"));
+
 };
 
 import Data from'./data';
