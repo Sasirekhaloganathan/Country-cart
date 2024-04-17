@@ -9,6 +9,9 @@ import Login from './Buyercomponents/LoginPage'
 import Register from './Buyercomponents/RegisterPage'
 import ForgotPass from './Buyercomponents/ForgetPasswordPage'
 import Farmers from './Farmercomponents/Farmers'
+import FarmerLogin from './Farmercomponents/LoginPage'
+import FarmerRegister from './Farmercomponents/RegisterPage'
+
 function App() {
   const [count, setCount] = useState(0)
   return (
@@ -25,6 +28,8 @@ function App() {
       <Route path='/cart' element={<Cart />}></Route>
       <Route path="/cart/:data" component={<Cart />} />
       <Route path="/farmers" element={<Farmers />} />
+      <Route path="/flogin" element={<FarmerLogin />} />
+      <Route path="/fregister" element={<FarmerRegister />} />
 
 
       </Routes>

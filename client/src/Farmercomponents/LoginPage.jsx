@@ -9,7 +9,7 @@ export default function SignInPage() {
         const navigate=useNavigate();
         const handleSubmit=(e)=>{
             e.preventDefault(); 
-            axios.post('http://localhost:3000/login',{email,password}).then(result=>{
+            axios.post('http://localhost:3000/flogin',{email,password}).then(result=>{
             console.log(result)
             if(result.data=="success")
             navigate('/farmers');
@@ -37,7 +37,7 @@ export default function SignInPage() {
                 </p>
             </form>
             <footer>
-                <p>First time? <Link to="/register">Create an account</Link>.</p>
+                <p>First time? <Link to="/fregister">Create an account</Link>.</p>
                 <p><Link to="/">Back to Homepage</Link>.</p>
             </footer>
         </div>
