@@ -29,7 +29,7 @@ const HomePage = () =>
         In addition to transparency, Country Cart prioritizes convenience and accessibility for users. With a user-friendly interface, consumers can easily browse, select, and purchase their desired products with minimal effort. The app also offers features such as customizable preferences and order tracking, enhancing the overall shopping experience. By combining convenience with transparency and a commitment to supporting local farmers, Country Cart  reshaping the way we buy food.
         </div>
         </div>
-        <div className="footer">
+        <div id="footer">
                         <li>Country Cart<br></br><br></br>
                         Email Us : countrycart24@gmail.com<br></br><br></br>
                         Address :<br></br>40,Cornelia Street,<br></br>Pondicherry.<br></br>
