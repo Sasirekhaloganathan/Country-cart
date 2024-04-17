@@ -11,6 +11,13 @@ function Navigation(){
             </a>
             </li>
             <li>
+                <a href="/">
+                <img src="/switch.png">
+
+                </img>
+                    </a>
+            </li>
+            <li>
                 <a href="/cart">
                 <img src="/trolley.png">
 

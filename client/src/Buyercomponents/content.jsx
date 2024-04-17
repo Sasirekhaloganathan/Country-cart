@@ -4,7 +4,14 @@ import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 import Cart from './cart';
 import Data from'./data';
+import axios from 'axios'
+import { useEffect } from 'react';
 const Content=()=> {
+  const [products,setProducts]=useState([])
+  useEffect(()=>{
+    axios.get('http://localhost:3000/content').then(result=>setProducts(result.data))
+    .catch(err=> console.log(err))
+  })
     return (
       <>
       <div className='nav'>

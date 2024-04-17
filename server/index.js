@@ -15,7 +15,11 @@ app.post('/register',(req,res)=>{
   BuyerModel.create(req.body).then(result => res.json(result))
   .catch(err => res.json(err))
 })
-
+app.get('/content',(req,res)=>{
+  ProductModel.find({})
+  .then(result=> res.json(result))
+  .catch(err => res.json(err))
+})
 app.post('/login',(req,res)=>{
   const {email,password}=req.body;
   BuyerModel.findOne({email:email}).then(

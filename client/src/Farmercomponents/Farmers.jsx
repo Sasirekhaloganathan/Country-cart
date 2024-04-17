@@ -1,5 +1,6 @@
 import React , {Fragment, useState} from "react";
 import '../FarmerStyle/Farmers.css';
+import {Link } from 'react-router-dom'
 import Navigation from "../Buyercomponents/Navigation";
 import axios from 'axios'
 const Farmers = () => {
@@ -46,6 +47,7 @@ const Farmers = () => {
   <p className="attribute">Upload Photos : </p><input type="file" className="ip" id="imgip" accept="image/*"onChange={(e)=>setImage(e.target.files[0])}  required></input>
   <p className="attribute">Location : </p><input type="text" className="ip" id="loc"></input><br></br>
   <p className="attribute2"></p><button className="attribute2" type="submit">Post</button>
+  <h4><Link to='/'>Logout</Link></h4>
 </form>
         </div>
         </>
