@@ -6,7 +6,7 @@ const Farmers = () => {
         <>
         <div className="icon"><img src="Country_Cart_Logo.png" /></div>
         <div className="fcont1">
-            <h2 className="title" ><b>POST</b></h2>
+            <h2 className="title" ><b>POST</b></h2><br></br>
             <form action="/action_page.php">
    <p className="attribute">Choose category : </p>
    <select name="cat" id="cat" className="ip">
@@ -14,6 +14,7 @@ const Farmers = () => {
     <option value="Fruits">Fruits</option>
     <option value="Greens">Greens</option>
     <option value="Nuts">Nuts</option>
+    <option value="Cereals">Cereals</option>
   </select>
   <br></br>
   <p className="attribute1">Product Details</p>
@@ -23,7 +24,7 @@ const Farmers = () => {
   <p className="attribute">Quantity :</p><input type="text" className="ip" placeholder ="Enter the Quantity " id="qty" required></input>
   <p className="attribute">Upload Photos : </p><input type="file" className="ip" id="imgip" accept="image/*" required></input>
   <p className="attribute">Location : </p><input type="text" className="ip" id="loc"></input><br></br>
-  <p className="attribute"></p><button className="ip" type="submit">Post</button>
+  <p className="attribute2"></p><button className="attribute2" type="submit">Post</button>
 </form>
         </div>
         </>
