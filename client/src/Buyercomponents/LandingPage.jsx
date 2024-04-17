@@ -27,10 +27,10 @@ export default function LandingPage() {
             <div id="farmerspan">VENDOR</div></div>
             <div><br /><br /><br /><br /><br /><br /></div> 
             <div></div>
-                <Link to="/flogin">
+                <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>
                 </Link>
-                <Link to="/fregister">
+                <Link to="/register">
                     <button className="primary-button" id="reg_btn"><span>register </span></button>
                 </Link>
             </div>

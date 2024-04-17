@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', cursive;
+    font-family: "Roboto", sans-serif
 }
 
 body {
@@ -49,7 +49,6 @@ body {
 }
 .buttons {
     display: flex;
-    margin-top: 0;
     flex-direction: row; /* Stack buttons vertically */
     align-items: center; /* Center-align buttons horizontally */
     margin-top: auto;
@@ -60,8 +59,7 @@ body {
 #userspan, #farmerspan {
     font-size:20px;
     padding-bottom:50px;
-    font-family: 'Arial', cursive;
-    
+    text-align:center;
 }
 .main-para {
     font-size: 2.5rem;
