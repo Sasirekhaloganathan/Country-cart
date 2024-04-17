@@ -75,7 +75,7 @@
     padding: 15px 15px 15px 15px;
     
 }
-.footer {
+#footer {
     background-color: rgb(40, 40, 40);
     color: white; 
     padding: 20px;
@@ -84,7 +84,7 @@
     margin:0;
 }
 
-.footer li {
+#footer li {
     display: inline-block;
 }
 

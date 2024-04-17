@@ -17,8 +17,9 @@ function Navigation(){
                 </img>
                     </a>
             </li>
-
-           
+            <li>
+                <a href="#footer">Contact Us</a>
+            </li>
             <li>
               <a href="/Content">Content</a>
             </li>
