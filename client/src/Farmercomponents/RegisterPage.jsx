@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link ,useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import '../Style/register.css'
 
@@ -7,9 +7,12 @@ export default function SignUpPage() {
         const [name,setName]=useState();
         const [email,setEmail]=useState();
         const [password,setPass]=useState();
+        const navigate=useNavigate();
         const handleSubmit=(e)=>{
             e.preventDefault(); 
-            axios.post('http://localhost:3000/register',{name,email,password}).then(result=>console.log(result))
+            axios.post('http://localhost:3000/fregister',{name,email,password}).then(result=>{console.log(result)
+        navigate('/flogin')
+        })
             .catch(err=>console.log(err))
         }
     return (
@@ -37,7 +40,7 @@ export default function SignUpPage() {
                 </p>
             </form>
             <footer>
-                <p><Link to="/login">click to login</Link>.</p>
+                <p><Link to="/flogin">click to login</Link>.</p>
             </footer>
         </div>
     )

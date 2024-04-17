@@ -63,8 +63,8 @@ const products=[
     },
     {
         "id":"9",
-        "name":"Rice",
-        "price":"Rs.190 / kg",
+        "name":"Wheat",
+        "price":"Rs.50 / kg",
         "image":img9,
     },
     {
