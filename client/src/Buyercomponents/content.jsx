@@ -26,7 +26,7 @@ const Content=()=> {
                     src={image}
                     alt="Product"
                     className="product-image"
-                     id="img"
+                    id="img"
 
                     />
                   <div className="description-box">

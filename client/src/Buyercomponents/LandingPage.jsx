@@ -11,16 +11,9 @@ export default function LandingPage() {
 <div className="login">
             <div className="buttons text-center">
 
-                <div><span id="userspan">BUYER</span></div>
-                <div>
-                    <Link to="/login">
-                        <button className="primary-button" id="login_btn"><span>log in</span></button>
-                    </Link>
-                    <Link to="/register">
-                        <button className="primary-button" id="reg_btn"><span>register </span></button>
-                    </Link>
-                </div>
-            <div id="userspan">BUYER</div><br></br>
+             <div>
+            <div id="userspan">BUYER</div></div>
+            <div><br /><br /><br /><br /><br /><br /></div> 
                 <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>
                 </Link>
@@ -30,7 +23,10 @@ export default function LandingPage() {
 
             </div>
             <div className="buttons text-center">
-            <div id="farmerspan">VENDOR</div><br></br>
+                <div>
+            <div id="farmerspan">VENDOR</div></div>
+            <div><br /><br /><br /><br /><br /><br /></div> 
+            <div></div>
                 <Link to="/login">
                     <button className="primary-button" id="login_btn"><span>log in</span></button>
                 </Link>
