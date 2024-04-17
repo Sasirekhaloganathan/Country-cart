@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const cors=require('cors');
+const multer = require('multer')
 const mongoose = require('mongoose');
 const BuyerModel=require('./models/BuyerModel')
 const VendorModel=require('./models/VendorModel')
+const ProductModel=require('./models/ProductModel');
+const path = require('path');
 app.use(express.json())
 app.use(cors())
 mongoose
@@ -53,6 +56,22 @@ app.post('/flogin',(req,res)=>{
       }
     }
   )
+})
+const storage = multer.diskStorage({
+  destination:(req,file,cb)=>{
+    cb(null , 'public/images')
+  },
+  filename: (req , file, cb)=>{
+    cb(null,file.fieldname + "_" + Date.now() + path.extname(file.originalname))
+  }
+})
+
+const prodIm=multer({
+  storage: storage
+})
+app.post('/farmers', prodIm.single('prodImage'),(req,res)=>{
+  ProductModel.create(req.body).then(result=>res.json(result))
+  .catch(err=>console.log(err))
 })
 app.listen(3000,()=>{
   console.log("Server is running");
